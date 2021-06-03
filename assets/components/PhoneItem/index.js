@@ -4,20 +4,23 @@ import StyledButton from "../StyledButton";
 import styles from "./styles";
 
 const CarItem = (props) => {
-  
-  const {name, tagline, image, taglineCTA} = props.phone;
+
+  const { name, tagline, image, taglineCTA } = props.phone;
 
   return (
+    // cart container
     <View style={styles.carContainer}>
+      {/* background images */}
       <ImageBackground
         source={image}
         style={styles.image}
       />
+      {/* titles */}
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>
         <Text style={styles.subTitles}>{tagline} <br /><Text>{taglineCTA}</Text></Text>
       </View>
-
+      {/* custom primary buttons */}
       <View style={styles.buttonsContainer}>
         <StyledButton
           type="primary"
@@ -27,6 +30,7 @@ const CarItem = (props) => {
           }}
         />
 
+        {/* custom secondary buttons */}
         <StyledButton
           type="secondary"
           content={"Order Now"}
