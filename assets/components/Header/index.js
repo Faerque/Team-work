@@ -6,12 +6,16 @@ import menu from "../../images/menu.png";
 
 const Header = () => {
   return (
-    // <Header
-    //   leftComponent={{ icon: "menu", color: "#fff" }}
-    //   centerComponent={{ text: "MY TITLE", style: { color: "#fff" } }}
-    //   rightComponent={{ icon: "home", color: "#fff" }}
-    // />
-    <View> ok </View>
+    <View style={styles.container}>
+      <Image
+        style={styles.logo}
+        source={logo}
+      />
+      <Image
+        style={styles.menu}
+        source={menu}
+      />
+    </View>
   );
 };
 

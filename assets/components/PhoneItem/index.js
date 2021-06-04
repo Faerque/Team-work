@@ -15,7 +15,7 @@ const CarItem = (props) => {
       />
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>
-        <Text style={styles.subTitles}>{tagline} <br /><Text>{taglineCTA}</Text></Text>
+        <Text style={styles.subTitles}>{tagline} {taglineCTA}</Text>
       </View>
 
       <View style={styles.buttonsContainer}>
